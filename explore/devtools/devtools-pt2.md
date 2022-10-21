@@ -1,0 +1,4 @@
+1. What was the bug?
+   **After adding watch expressions in devtools, the value of num1 and num2 are not a numeric type; they are strings. This is the first bug. The second one is the data type of result that is undefined. The last one is the semicolon at the end of line 11 and 12.**
+2. How would you fix it? Include a screenshot of your fix. Name it fix.png (or whatever image extension you would like to use)
+   **Firstly, in line 11, we have to make numeric conversion for both num1 and num2 and add semicolon at the end of line as `let result = Number(num1) + Number(num2);`. Then, we add one more semicolon at the end of line 12 as well.**
