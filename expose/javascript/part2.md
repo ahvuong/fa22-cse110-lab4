@@ -63,10 +63,10 @@
     **This is `true` because a strict euality operator `===` checks the equality without type conversion and `Boolean(2)` results in `true`**
 15. Explain the difference between the == and === operators.
     **`===` is a strict equality operator that checks the equality without type conversion. This also means the result will return false immediately while comparing two different types without type conversion. Meanwhile `==` will check the comparison after type conversion happens, so it cannot differentiate the different types.**
-16. [part2-question16.js](expose\javascript\part2-question16.js)
+16. [part2-question16.js](part2-question16.js)
 17. If the function above is called with the following parameters modifyArray([1,2,3], doSomething), what will be the result? Briefly walk through how you arrived at that result. (This should be in your part2.md). Here we are passing in a function as a parameter, however we can also return a function from another function just as easily, you're encouraged to play around with callbacks as they are used heavily in frontend JS development.  
     **The result of newArr is an array of `[2,4,6]`.**  
     Firstly, the function `modifyArray([1,2,3], doSomething)` is called, newArr starts with an empty array before `for` loop runs. In the second step, while running `for` loop, for every `i`, the `callback` will call `doSomething(num)` function and pass `array[i]` as its parameter `num`. The `doSomething(sum)` function returns the value of `2 * num` where `num` is passed by the value of `array[i]` and this result will be pushed back to `newArr` array. This step will repeat and continue until `for` loop is done. Hence, `newArr` finally return an array of `[2, 4, 6]`.
-18. [part2-question18.js](expose\javascript\part2-question18.js)
+18. [part2-question18.js](part2-question18.js)
 19. What is the output of the above code? (This should be in your part2.md)
     **The output of the code is `1 4 3 2`**
